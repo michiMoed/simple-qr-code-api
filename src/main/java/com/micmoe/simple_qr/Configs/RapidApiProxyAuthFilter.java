@@ -10,9 +10,10 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
-@Component
+//@Component
+//TODO disabled for now, try to enable it
 public class RapidApiProxyAuthFilter extends OncePerRequestFilter {
-    @Value("${rapidapi.proxy.secret}")
+    @Value("${RAPIDAPI_PROXY_SECRET}")
     private String rapidApiProxySecret;
 
     @Override
