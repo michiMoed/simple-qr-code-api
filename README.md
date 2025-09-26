@@ -18,7 +18,7 @@ Swagger UI is available at:
 ## 🔧 Endpoints
 
 ### 1. Generate QR Code
-`POST /api/qr/generate`
+`GET /api/qr/generate`
 
 **Parameters (query):**
 - `data` *(required)* → Text or URL to encode

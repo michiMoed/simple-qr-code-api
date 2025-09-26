@@ -19,7 +19,7 @@ public class QrCodeController {
         this.qrDecodeService = qrDecodeService;
     }
 
-    @PostMapping(value = "/generate")
+    @GetMapping(value = "/generate")
     public ResponseEntity<?> generate(
             @RequestParam String data,
             @RequestParam(required = false, defaultValue = "200") int size,
